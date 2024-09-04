@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -215,9 +215,9 @@ namespace antImageCompressionSystem
             string coordSegment = null;
             int enders = 1;         //111 - END/START - 7
             //WRITE THE STRINGS TO AN EXTERNAL FILE && COUNT THE NUMBER OF BITS IN THE PROGRAM
-            StreamWriter stringOutput = new StreamWriter(@"C:\Users\Matthew Mouring\Desktop\antImageCompressionSystem\CompleteRecords.txt");
-            StreamWriter stringOutput2 = new StreamWriter(@"C:\Users\Matthew Mouring\Desktop\antImageCompressionSystem\movementOutput.txt");
-            StreamWriter stringOutput3 = new StreamWriter(@"C:\Users\Matthew Mouring\Desktop\antImageCompressionSystem\coordinates.txt");
+            StreamWriter stringOutput = new StreamWriter(@"DIR\antImageCompressionSystem\CompleteRecords.txt");
+            StreamWriter stringOutput2 = new StreamWriter(@"DIR\antImageCompressionSystem\movementOutput.txt");
+            StreamWriter stringOutput3 = new StreamWriter(@"DIR\\antImageCompressionSystem\coordinates.txt");
             for (int g = 0; g < individualAntRecords.Length; g++)
             {
                 numberOfBits += individualAntRecords[g].Length;               
@@ -1646,7 +1646,7 @@ namespace antImageCompressionSystem
                 }
                 counter = 0;
             }
-            using (StreamWriter outFile = new StreamWriter(@"C:\Users\Matthew Mouring\Desktop\Matthew\testOutput.csv"))
+            using (StreamWriter outFile = new StreamWriter(@"DIR\Images\testOutput.csv"))
             {
                 for (int g = 0; g < newImage.GetLength(0); g++)
                 {
@@ -1672,7 +1672,7 @@ namespace antImageCompressionSystem
         //BEGIN TO GATHER VARIOUS IMAGE DATA
         static void imageData()
         {
-            var reader = new StreamReader(File.OpenRead(@"C:\Users\Matthew Mouring\Desktop\antImageCompressionSystem\movementOutput.txt"));
+            var reader = new StreamReader(File.OpenRead(@"DIR\antImageCompressionSystem\movementOutput.txt"));
             int moveBits = 0;
             int coordBits = 0;
             List<string> movementData = new List<string>();
@@ -1683,7 +1683,7 @@ namespace antImageCompressionSystem
                 movementData.Add(line);
             }
             reader.Close();
-            var reader2 = new StreamReader(File.OpenRead(@"C:\Users\Matthew Mouring\Desktop\antImageCompressionSystem\coordinates.txt"));
+            var reader2 = new StreamReader(File.OpenRead(@"DIR\antImageCompressionSystem\coordinates.txt"));
             while (!reader2.EndOfStream)
             {
                 var line = reader2.ReadLine();
@@ -1706,7 +1706,7 @@ namespace antImageCompressionSystem
             string segMove = null;
             int placeInString = 0;
             int decVal = 0;
-            using (StreamWriter outFile = new StreamWriter(@"C:\Users\Matthew Mouring\Desktop\Test_Results\IMG_26\Run2\IMG26_movementDecimalValues_R2.csv"))
+            using (StreamWriter outFile = new StreamWriter(@"DIR\Test_Results\IMG_26\Run2\IMG26_movementDecimalValues_R2.csv"))
             {
                 string decValues = "";
                 while (placeInString != moveData[0].Length)
@@ -1725,7 +1725,7 @@ namespace antImageCompressionSystem
             }
             //SEGMENT THE STRINGS FROM THE COORDINATES FILE FOR DECIMAL CONVERSION AND OCCURANCE COUNTING
             int[] dirOccurance = new int[4] { 0, 0, 0, 0 };
-            using (StreamWriter outFile = new StreamWriter(@"C:\Users\Matthew Mouring\Desktop\Test_Results\IMG_26\Run2\IMG26_coordinatesDecimalValues_R2.csv"))
+            using (StreamWriter outFile = new StreamWriter(@"DIR\Test_Results\IMG_26\Run2\IMG26_coordinatesDecimalValues_R2.csv"))
             {
                 for (int g = 0; g < coordData.Length; g++)
                 {
