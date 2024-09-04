@@ -1,9 +1,0 @@
-C:\Users\Matthew Mouring\Desktop\antImageCompressionSystem\antImageCompressionSystem\bin\Debug\antImageCompressionSystem.exe.config
-C:\Users\Matthew Mouring\Desktop\antImageCompressionSystem\antImageCompressionSystem\bin\Debug\antImageCompressionSystem.exe
-C:\Users\Matthew Mouring\Desktop\antImageCompressionSystem\antImageCompressionSystem\bin\Debug\antImageCompressionSystem.pdb
-C:\Users\Matthew Mouring\Desktop\antImageCompressionSystem\antImageCompressionSystem\obj\Debug\antImageCompressionSystem.csprojResolveAssemblyReference.cache
-C:\Users\Matthew Mouring\Desktop\antImageCompressionSystem\antImageCompressionSystem\obj\Debug\antImageCompressionSystem.exe
-C:\Users\Matthew Mouring\Desktop\antImageCompressionSystem\antImageCompressionSystem\obj\Debug\antImageCompressionSystem.pdb
-F:\Research\Completed\AntImageAlgorithm\antImageCompressionSystem\antImageCompressionSystem\bin\Debug\antImageCompressionSystem.exe.config
-F:\Research\Completed\AntImageAlgorithm\antImageCompressionSystem\antImageCompressionSystem\obj\Debug\antImageCompressionSystem.exe
-F:\Research\Completed\AntImageAlgorithm\antImageCompressionSystem\antImageCompressionSystem\obj\Debug\antImageCompressionSystem.pdb
